@@ -58,7 +58,8 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
-			<control type="image">
+			<!--blue border focus not working correctly with fixed list-->
+			<!--<control type="image">
 				<top>-4</top>
 				<left>-4</left>
 				<width>324</width>
@@ -68,7 +69,7 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-			</control>
+			</control>-->
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -277,7 +278,8 @@
 			</control>
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
-				<control type="image">
+				<!--blue border focus not working correctly with fixed list-->
+				<!--<control type="image">
 					<left>11</left>
 					<top>-14</top>
 					<width>298</width>
@@ -287,7 +289,7 @@
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-				</control>
+				</control>-->
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>

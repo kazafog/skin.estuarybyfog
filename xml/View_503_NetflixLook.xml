@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="View_503_Netflix"> 
+
+
+        <control type="fixedlist" id="503">
+            <viewtype label="Netflix">list</viewtype>
+		<onup>9000</onup>
+<ondown>710</ondown>            
+	    <left>10</left>
+            <top>110</top>
+            <width>2500</width>
+            <height>600</height>
+            <orientation>horizontal</orientation>
+            <focusposition>2</focusposition>
+            <visible>Container.Content(movies) |Container.Content(tvshows) | Container.Content(seasons)</visible>
+
+            <itemlayout width="400" height="400">
+
+               <control type="image">
+            <left>50</left>
+            <top>110</top>
+	    <width>200</width>
+            <height>300</height>
+            <texture>$INFO[Container(503).ListItem.Art(thumb)]</texture>
+            <aspectratio>keep</aspectratio>
+            <visible>Control.IsVisible(503)</visible>
+        </control>
+
+                <control type="label">
+                    <left>50</left>
+                    <top>450</top>
+                    <width>200</width>
+                    <height>60</height>
+                    <align>left</align>
+                    <label>$INFO[ListItem.Label]</label>
+                    <font>font14</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <selectedcolor>FFFFFFFF</selectedcolor>
+                </control>
+
+            </itemlayout>
+
+            <focusedlayout  width="400" height="400">
+				
+ 			<control type="image">
+            <left>50</left>
+            <top>60</top>
+	    <width>250</width>
+            <height>400</height>
+            <texture>$INFO[Container(503).ListItem.Art(thumb)]</texture>
+            <aspectratio>keep</aspectratio>
+            <visible>Control.IsVisible(503)</visible>
+        		</control>                
+
+
+<control type="label">
+                    <left>50</left>
+                    <top>450</top>
+                    <width>200</width>
+                    <height>80</height>
+                    <align>center</align>
+                    <label>$INFO[ListItem.Label]</label>
+                    <font>font14</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <selectedcolor>FFFFFFFF</selectedcolor>
+                </control>
+
+
+<control type="label">
+                    <left>50</left>
+                    <top>480</top>
+                    <width>200</width>
+                    <height>80</height>
+                    <align>center</align>
+                    <label>_____________</label>
+                    <font>font14</font>
+                    <textcolor>FFFFFFFE</textcolor>
+                    <selectedcolor>FFFFFFFF</selectedcolor>
+                </control>
+
+            </focusedlayout>
+        </control>
+
+<control type="label">
+                    <left>700</left>
+                    <top>80</top>
+                    <width>1100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <label>$INFO[Container(503).ListItem.Plot]</label>
+                    <wrapmultiline>true</wrapmultiline>
+		    <font>font14</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <selectedcolor>FFFFFFFF</selectedcolor>
+                </control>
+<control type="label">
+                    <left>1300</left>
+                    <top>30</top>
+                    <width>500</width>
+                    <height>140</height>
+                    <align>center</align>
+                    <label>$INFO[Container(503).ListItem.Genre]</label>
+                    <wrapmultiline>true</wrapmultiline>
+		    <font>font14</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <selectedcolor>FFFFFFFF</selectedcolor>
+                </control>
+<control type="label">
+                    <left>700</left>
+                    <top>30</top>
+                    <width>400</width>
+                    <height>140</height>
+                    <align>center</align>
+                    <label>$INFO[Container(503).ListItem.Label]</label>
+                    <wrapmultiline>true</wrapmultiline>
+		    <font>font14</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <selectedcolor>FFFFFFFF</selectedcolor>
+                </control>
+
+
+
+  
+
+
+
+    </include>
+</includes>                                                                  		                                                                      
